@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppointmentsController">
+   <children>
+      <TableView fx:id="appointmentTable" layoutX="20.0" layoutY="64.0" prefHeight="336.0" prefWidth="761.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="37.0" text="ID" />
+          <TableColumn fx:id="title" prefWidth="75.0" text="Title" />
+            <TableColumn fx:id="description" prefWidth="93.0" text="Description" />
+            <TableColumn fx:id="location" prefWidth="99.0" text="Location" />
+            <TableColumn fx:id="contactName" prefWidth="74.0" text="Contact" />
+            <TableColumn fx:id="type" prefWidth="67.0" text="Type" />
+            <TableColumn fx:id="start" prefWidth="122.0" text="Start Time" />
+            <TableColumn fx:id="end" prefWidth="102.0" text="End Time" />
+            <TableColumn fx:id="customerId" text="Customer ID" />
+        </columns>
+      </TableView>
+      <Button fx:id="newButton" layoutX="38.0" layoutY="418.0" mnemonicParsing="false" onAction="#newButtonListener" text="New" />
+      <Button fx:id="updateButton" layoutX="120.0" layoutY="418.0" mnemonicParsing="false" onAction="#updateButtonListener" text="Update" />
+      <Button fx:id="deleteButton" layoutX="222.0" layoutY="418.0" mnemonicParsing="false" onAction="#deleteButtonListener" text="Delete" />
+      <Button fx:id="backButton" layoutX="721.0" layoutY="418.0" mnemonicParsing="false" onAction="#backButtonListener" text="Back" />
+      <RadioButton fx:id="weekRadio" layoutX="36.0" layoutY="28.0" mnemonicParsing="false" onAction="#toggleListener" text="This Week">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggle" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="monthRadio" layoutX="167.0" layoutY="28.0" mnemonicParsing="false" onAction="#toggleListener" text="This Month" toggleGroup="$toggle" />
+      <RadioButton fx:id="allRadio" layoutX="299.0" layoutY="28.0" mnemonicParsing="false" onAction="#toggleListener" selected="true" text="All" toggleGroup="$toggle" />
+   </children>
+</AnchorPane>
