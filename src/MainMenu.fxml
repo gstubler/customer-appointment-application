@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainMenuController">
+   <children>
+      <Label fx:id="mainMenuLabel" alignment="CENTER" layoutX="120.0" layoutY="19.0" text="Main Menu" />
+      <Button fx:id="customersButton" alignment="CENTER" layoutX="111.0" layoutY="60.0" mnemonicParsing="false" onAction="#customersButtonListener" text="Customers" />
+      <Button fx:id="appointmentsButton" alignment="CENTER" layoutX="103.0" layoutY="105.0" mnemonicParsing="false" onAction="#appointmentsButtonListener" text="Appointments" />
+      <Button fx:id="logoutButton" alignment="CENTER" layoutX="122.0" layoutY="299.0" mnemonicParsing="false" onAction="#logoutButtonListener" text="Logout" />
+      <Button fx:id="monthButton" alignment="CENTER" layoutX="104.0" layoutY="150.0" mnemonicParsing="false" onAction="#monthButtonListener" text="Month Report" />
+      <Button fx:id="scheduleButton" alignment="CENTER" layoutX="92.0" layoutY="195.0" mnemonicParsing="false" onAction="#scheduleButtonListener" text="Contact Schedule" />
+      <Button fx:id="hoursButton" alignment="CENTER" layoutX="87.0" layoutY="240.0" mnemonicParsing="false" onAction="#hoursButtonListener" text="Appointment Hours" />
+   </children>
+</AnchorPane>
